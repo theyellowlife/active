@@ -11,3 +11,9 @@ client.on('ready', () => {
 });
 
 client.login(token)
+
+client.on('interactionCreate', async interaction => {
+    if (interaction.commandName === 'ping') {
+        interaction.reply("test")
+    }
+})
